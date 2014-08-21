@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131102143930) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "nifty_attachments", force: true do |t|
     t.integer  "parent_id"
     t.string   "parent_type"
@@ -21,7 +24,7 @@ ActiveRecord::Schema.define(version: 20131102143930) do
     t.string   "role"
     t.string   "file_name"
     t.string   "file_type"
-    t.binary   "data",        limit: 10485760
+    t.binary   "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
