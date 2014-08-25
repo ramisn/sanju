@@ -55,7 +55,7 @@ div#flash-alert { background:#a13361; color:#fff; text-align:center; padding:8px
 // Primary header
 //
 header.main {
-	background:image-url('header.jpg') #0a1f20 50% 50%;
+	background:image-url('header.jpg') #0a1f20 50% 28%;
 	background-size:cover;
 	color:#fff;
 	font-size:0.9em;
@@ -693,4 +693,32 @@ div.overlay {
 	left:0;
 	height:4000px;
 	background:rgba(0,0,0,0.3);
+}
+
+
+div.img {
+    text-decoration: none;
+    display: block;
+    width: 330px;
+    height: 228px;
+    float: left;
+    margin: 0 3px 3px 0;
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+div.img:hover, div.img:hover {
+    opacity: 5;
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
 }
